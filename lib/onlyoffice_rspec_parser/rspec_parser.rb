@@ -2,26 +2,21 @@ require 'onlyoffice_logger_helper'
 module OnlyofficeRspecParser
   # Static parsing of _rspec.rb files
   class SpecParser
-    def self.get_it_mass_by_path(path_to_spec, include_runtime_names = false)
+    def self.get_it_mass_by_path(path_to_spec)
       raise 'Spec by path: ' + path_to_spec + '. Not exist!' unless File.exist?(path_to_spec)
       test_file = File.new(path_to_spec)
       file_tests = []
       test_file.each do |line|
         next unless line =~ /it [\'\"](.*)?[\'\"] do/
         test_name = line.scan(/it [\'\"](.*?)[\'\"] do/)
-        name = test_name.first.first
-        if include_runtime_names
-          file_tests << name
-        else
-          file_tests << name unless name.include?('#{')
-        end
+        file_tests << test_name.first.first
       end
       test_file.close
       file_tests
     end
 
     def self.check_for_doubles(path_to_spec)
-      case_names = get_it_mass_by_path(path_to_spec, true)
+      case_names = get_it_mass_by_path(path_to_spec)
       duplicates = case_names.find_all { |e| case_names.count(e) > 1 }
       if duplicates.empty?
         OnlyofficeLoggerHelper.log("No duplicates in file #{path_to_spec}")
