@@ -33,6 +33,7 @@ module OnlyofficeRspecParser
     def self.find_spec_without_expect(folder)
       files = OnlyofficeFileHelper::FileHelper.list_file_in_directory(folder)
       files.each do |file|
+        next unless file.end_with?('_spec.rb')
         parsed_spec = SpecParsed.new(file)
         parsed_spec.it_nodes.each do |current_it|
           next if current_it.include_expect?
