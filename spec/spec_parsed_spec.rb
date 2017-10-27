@@ -25,4 +25,9 @@ RSpec.describe OnlyofficeRspecParser::SpecParsed do
     spec = OnlyofficeRspecParser::SpecParsed.new('spec/spec_examples/double_it_spec.rb')
     expect(spec.it_nodes.last.include_expect?).to be_truthy
   end
+
+  it 'ItParsed#to_s show meaningfull information' do
+    spec = OnlyofficeRspecParser::SpecParsed.new('spec/spec_examples/double_it_spec.rb')
+    expect(spec.it_nodes.last.to_s).to eq('spec/spec_examples/double_it_spec.rb:8')
+  end
 end
