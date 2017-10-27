@@ -16,9 +16,3 @@ Metrics/LineLength:
 # Configuration parameters: CountComments.
 Metrics/MethodLength:
   Max: 12
-
-# Offense count: 1
-# Cop supports --auto-correct.
-Style/Encoding:
-  Exclude:
-    - 'onlyoffice_rspec_parser.gemspec'
