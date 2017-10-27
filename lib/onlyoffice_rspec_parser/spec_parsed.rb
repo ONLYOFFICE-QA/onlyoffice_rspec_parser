@@ -18,10 +18,11 @@ module OnlyofficeRspecParser
     def search_node_for_it(node)
       nodes = []
       node.children.each do |child|
-        if child.is_a?(Parser::AST::Node)
+        next unless child.is_a?(Parser::AST::Node)
+        if child.to_s.start_with?("(send nil :it\n")
+          nodes << ItParsed.new(node)
+        else
           nodes += search_node_for_it(child)
-        elsif child.is_a?(Symbol)
-          nodes << ItParsed.new(node) if child.to_s == 'it'
         end
       end
       nodes

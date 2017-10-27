@@ -7,7 +7,7 @@ module OnlyofficeRspecParser
 
     # @return [True, False] check if node include `expect`
     def include_expect?
-
+      @node.children.last.to_s.include?(":expect\n")
     end
   end
 end

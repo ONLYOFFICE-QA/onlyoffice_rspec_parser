@@ -20,4 +20,9 @@ RSpec.describe OnlyofficeRspecParser::SpecParsed do
     spec = OnlyofficeRspecParser::SpecParsed.new('spec/spec_examples/double_it_spec.rb')
     expect(spec.it_nodes.first.include_expect?).to be_falsey
   end
+
+  it 'ItParsed#include_expect? correctly true for it with expect' do
+    spec = OnlyofficeRspecParser::SpecParsed.new('spec/spec_examples/double_it_spec.rb')
+    expect(spec.it_nodes.last.include_expect?).to be_truthy
+  end
 end
