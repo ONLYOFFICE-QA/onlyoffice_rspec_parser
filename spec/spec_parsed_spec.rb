@@ -11,21 +11,6 @@ RSpec.describe OnlyofficeRspecParser::SpecParsed do
     expect(spec.it_nodes.length).to eq(2)
   end
 
-  it 'ItParsed#include_expect? correctly false for empty it' do
-    spec = OnlyofficeRspecParser::SpecParsed.new('spec/spec_examples/rspec_parsed/single_it_spec.rb')
-    expect(spec.it_nodes.first.include_expect?).to be_falsey
-  end
-
-  it 'ItParsed#include_expect? correctly false for it without expect' do
-    spec = OnlyofficeRspecParser::SpecParsed.new('spec/spec_examples/rspec_parsed/double_it_spec.rb')
-    expect(spec.it_nodes.first.include_expect?).to be_falsey
-  end
-
-  it 'ItParsed#include_expect? correctly true for it with expect' do
-    spec = OnlyofficeRspecParser::SpecParsed.new('spec/spec_examples/rspec_parsed/double_it_spec.rb')
-    expect(spec.it_nodes.last.include_expect?).to be_truthy
-  end
-
   it 'ItParsed#to_s show meaningfull information' do
     spec = OnlyofficeRspecParser::SpecParsed.new('spec/spec_examples/rspec_parsed/double_it_spec.rb')
     expect(spec.it_nodes.last.to_s).to eq('spec/spec_examples/rspec_parsed/double_it_spec.rb:8')
