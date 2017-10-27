@@ -6,15 +6,15 @@ RSpec.describe OnlyofficeRspecParser do
   end
 
   it 'no_dublicates_spec' do
-    expect(OnlyofficeRspecParser::SpecParser.check_for_doubles('spec/spec_examples/no_dublicates_spec.rb')).to be_empty
+    expect(OnlyofficeRspecParser::SpecParser.check_for_doubles('spec/spec_examples/duplicates/no_dublicates_spec.rb')).to be_empty
   end
 
   it 'one_dublicates_spec' do
-    expect(OnlyofficeRspecParser::SpecParser.check_for_doubles('spec/spec_examples/one_dublicates_spec.rb').length).to eq(1)
+    expect(OnlyofficeRspecParser::SpecParser.check_for_doubles('spec/spec_examples/duplicates/one_dublicates_spec.rb').length).to eq(1)
   end
 
   it 'check_folder_for_spec_doubles works for folder' do
-    expect(OnlyofficeRspecParser::SpecParser.check_folder_for_spec_doubles('spec/spec_examples/').length).to eq(2)
+    expect(OnlyofficeRspecParser::SpecParser.check_folder_for_spec_doubles('spec/spec_examples/duplicates/').length).to eq(2)
   end
 
   it 'check_folder_for_spec_doubles works for current folder' do
@@ -22,6 +22,6 @@ RSpec.describe OnlyofficeRspecParser do
   end
 
   it 'ignore_non_rspec_files' do
-    expect(OnlyofficeRspecParser::SpecParser.check_folder_for_spec_doubles('spec/spec_parser/spec_examples/non_spec').length).to be_zero
+    expect(OnlyofficeRspecParser::SpecParser.check_folder_for_spec_doubles('spec/spec_parser/spec_examples/duplicates/non_spec').length).to be_zero
   end
 end
