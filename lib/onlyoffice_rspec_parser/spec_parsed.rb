@@ -1,4 +1,5 @@
 require 'parser/current'
+require 'onlyoffice_file_helper'
 require_relative 'spec_parsed/it_parsed'
 module OnlyofficeRspecParser
   # Class for storing data of parsed spec
