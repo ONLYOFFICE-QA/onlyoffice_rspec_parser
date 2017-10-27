@@ -3,7 +3,7 @@ module OnlyofficeRspecParser
   # Static parsing of _rspec.rb files
   class SpecParser
     def self.get_it_mass_by_path(path_to_spec)
-      raise 'Spec by path: ' + path_to_spec + '. Not exist!' unless File.exist?(path_to_spec)
+      raise "Spec by path: #{path_to_spec} . Not exist!" unless File.exist?(path_to_spec)
       test_file = File.new(path_to_spec)
       file_tests = []
       test_file.each do |line|
