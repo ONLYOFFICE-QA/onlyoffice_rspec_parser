@@ -21,7 +21,7 @@ module OnlyofficeRspecParser
         if child.is_a?(Parser::AST::Node)
           nodes += search_node_for_it(child)
         elsif child.is_a?(Symbol)
-          nodes << child if child.to_s == 'it'
+          nodes << ItParsed.new(node) if child.to_s == 'it'
         end
       end
       nodes
