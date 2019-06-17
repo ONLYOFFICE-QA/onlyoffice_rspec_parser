@@ -1,13 +1,17 @@
+# frozen_string_literal: true
+
 require 'onlyoffice_logger_helper'
 module OnlyofficeRspecParser
   # Static parsing of _rspec.rb files
   class SpecParser
     def self.get_it_mass_by_path(path_to_spec)
       raise "Spec by path: #{path_to_spec} . Not exist!" unless File.exist?(path_to_spec)
+
       test_file = File.new(path_to_spec)
       file_tests = []
       test_file.each do |line|
         next unless line =~ /it [\'\"](.*)?[\'\"] do/
+
         test_name = line.scan(/it [\'\"](.*?)[\'\"] do/)
         file_tests << test_name.first.first
       end
@@ -15,13 +19,17 @@ module OnlyofficeRspecParser
       file_tests
     end
 
-    def self.check_for_doubles(path_to_spec)
+    def self.uniq_duplicates(path_to_spec)
       case_names = get_it_mass_by_path(path_to_spec)
       duplicates = case_names.find_all { |e| case_names.count(e) > 1 }
+      duplicates.uniq
+    end
+
+    def self.check_for_doubles(path_to_spec)
+      duplicates = uniq_duplicates(path_to_spec)
       if duplicates.empty?
         OnlyofficeLoggerHelper.log("No duplicates in file #{path_to_spec}")
       else
-        duplicates.uniq!
         OnlyofficeLoggerHelper.log("Duplicate names in file #{path_to_spec}:")
         duplicates.each do |cur_dup|
           OnlyofficeLoggerHelper.log("\t#{cur_dup}")

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 RSpec.describe OnlyofficeRspecParser::SpecParsed do
@@ -13,7 +15,7 @@ RSpec.describe OnlyofficeRspecParser::SpecParsed do
 
   it 'ItParsed#to_s show meaningfull information' do
     spec = OnlyofficeRspecParser::SpecParsed.new('spec/spec_examples/rspec_parsed/double_it_spec.rb')
-    expect(spec.it_nodes.last.to_s).to eq('spec/spec_examples/rspec_parsed/double_it_spec.rb:8')
+    expect(spec.it_nodes.last.to_s).to eq('spec/spec_examples/rspec_parsed/double_it_spec.rb:10')
   end
 
   it 'SpecParsed.find_spec_without_expect show data' do
