@@ -18,12 +18,6 @@ Layout/EmptyLineAfterGuardClause:
 Metrics/MethodLength:
   Max: 12
 
-# Offense count: 1
-# Cop supports --auto-correct.
-Style/ExpandPathArguments:
-  Exclude:
-    - 'onlyoffice_rspec_parser.gemspec'
-
 # Offense count: 16
 # Cop supports --auto-correct.
 # Configuration parameters: AutoCorrect, AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, IgnoredPatterns.
