@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'onlyoffice_logger_helper'
 module OnlyofficeRspecParser
   # Static parsing of _rspec.rb files

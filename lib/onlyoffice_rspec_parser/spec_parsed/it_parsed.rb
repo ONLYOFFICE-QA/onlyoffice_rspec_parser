@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module OnlyofficeRspecParser
   # Class for storing data of `it`
   class ItParsed

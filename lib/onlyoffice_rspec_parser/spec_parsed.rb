@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'parser/current'
 require 'onlyoffice_file_helper'
 require_relative 'spec_parsed/it_parsed'
