@@ -22,6 +22,7 @@ module OnlyofficeRspecParser
       nodes = []
       node.children.each do |child|
         next unless child.is_a?(Parser::AST::Node)
+
         if child.to_s.start_with?("(send nil :it\n")
           nodes << ItParsed.new(node, file)
         else
@@ -36,9 +37,11 @@ module OnlyofficeRspecParser
       files = OnlyofficeFileHelper::FileHelper.list_file_in_directory(folder)
       files.each do |file|
         next unless file.end_with?('_spec.rb')
+
         parsed_spec = SpecParsed.new(file)
         parsed_spec.it_nodes.each do |current_it|
           next if current_it.include_expect?
+
           OnlyofficeLoggerHelper.log("There is no expect in #{current_it}")
         end
       end
