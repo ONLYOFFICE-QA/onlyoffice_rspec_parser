@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency('onlyoffice_file_helper', '~> 0.1')
   spec.add_runtime_dependency('onlyoffice_logger_helper', '~> 1')
   spec.add_development_dependency 'bundler', '~> 2.0'
-  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency 'rake', '~> 12.3'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.license = 'AGPL-3.0'
 end
