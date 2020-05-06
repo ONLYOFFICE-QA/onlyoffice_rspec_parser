@@ -10,3 +10,7 @@
 ### Fixes
 
 * Correctly add `parser` dependency
+
+### Changes
+
+* Drop support of ruby older than 2.4
