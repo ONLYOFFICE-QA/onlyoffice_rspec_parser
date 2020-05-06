@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency('onlyoffice_file_helper', '~> 0.1')
   spec.add_runtime_dependency('onlyoffice_logger_helper', '~> 1')
+  spec.add_runtime_dependency('parser', '~> 2')
   spec.required_ruby_version = '>= 2.4'
   spec.license = 'AGPL-3.0'
 end
