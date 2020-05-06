@@ -6,3 +6,7 @@
 
 * Actualize `.gitignore`
 * Actualize travis CI config
+
+### Fixes
+
+* Correctly add `parser` dependency
