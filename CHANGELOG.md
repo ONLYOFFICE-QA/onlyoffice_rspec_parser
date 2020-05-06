@@ -10,6 +10,7 @@
 ### Fixes
 
 * Correctly add `parser` dependency
+* Correctly show coverage on local pc 
 
 ### Changes
 
