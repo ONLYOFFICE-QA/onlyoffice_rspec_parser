@@ -7,3 +7,7 @@ inherit_from:
 
 AllCops:
   NewCops: enable
+
+RSpec/RepeatedExample:
+  Exclude:
+    - 'spec/spec_examples/duplicates/*'
