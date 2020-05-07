@@ -41,14 +41,6 @@ RSpec/HooksBeforeExamples:
   Exclude:
     - 'spec/spec_examples/rspec_parsed/expect_after_it_spec.rb'
 
-# Offense count: 5
-# Cop supports --auto-correct.
-# Configuration parameters: Strict, EnforcedStyle, AllowedExplicitMatchers.
-# SupportedStyles: inflected, explicit
-RSpec/PredicateMatcher:
-  Exclude:
-    - 'spec/it_include_expect_spec.rb'
-
 # Offense count: 2
 RSpec/RepeatedDescription:
   Exclude:
