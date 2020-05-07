@@ -7,6 +7,7 @@
 * Actualize `.gitignore`
 * Actualize travis CI config
 * Support of `markdownlint`
+* `rake` task for release gem on github and rubygems
 
 ### Fixes
 
