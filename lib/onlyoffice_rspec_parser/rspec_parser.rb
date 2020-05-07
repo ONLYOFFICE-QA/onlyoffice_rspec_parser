@@ -10,7 +10,7 @@ module OnlyofficeRspecParser
       test_file = File.new(path_to_spec)
       file_tests = []
       test_file.each do |line|
-        next unless line =~ /it [\'\"](.*)?[\'\"] do/
+        next unless /it [\'\"](.*)?[\'\"] do/.match?(line)
 
         test_name = line.scan(/it [\'\"](.*?)[\'\"] do/)
         file_tests << test_name.first.first
