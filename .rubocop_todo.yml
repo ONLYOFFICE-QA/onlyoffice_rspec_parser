@@ -35,12 +35,6 @@ RSpec/FilePath:
   Exclude:
     - 'spec/spec_parsed_spec.rb'
 
-# Offense count: 1
-# Cop supports --auto-correct.
-RSpec/HooksBeforeExamples:
-  Exclude:
-    - 'spec/spec_examples/rspec_parsed/expect_after_it_spec.rb'
-
 # Offense count: 2
 RSpec/RepeatedDescription:
   Exclude:
