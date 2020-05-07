@@ -8,6 +8,7 @@
 * Actualize travis CI config
 * Support of `markdownlint`
 * `rake` task for release gem on github and rubygems
+* Add support of `rubocop-performance` and `rubocop-rspec`
 
 ### Fixes
 
