@@ -8,3 +8,8 @@ if ENV['CI'] == 'true'
   SimpleCov.formatter = SimpleCov::Formatter::Codecov
 end
 require 'onlyoffice_rspec_parser'
+
+# @return [String] path to examples root folder
+def examples_path
+  "#{Dir.pwd}/spec/onlyoffice_rspec_parser/spec_examples"
+end

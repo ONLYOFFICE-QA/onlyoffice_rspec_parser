@@ -3,9 +3,11 @@
 require 'rspec'
 
 describe 'My behaviour' do
-  it 'should do something' do
+  it 'does something' do
+    p 'a'
   end
 
-  it 'should do something' do
+  it 'some other' do
+    expect(stuff).to eq('a')
   end
 end

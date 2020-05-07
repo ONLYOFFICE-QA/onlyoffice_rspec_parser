@@ -3,9 +3,6 @@
 require 'rspec'
 
 describe 'My behaviour' do
-  it 'should do something' do
-  end
-
-  it 'should do another something' do
+  it 'does something' do
   end
 end
