@@ -10,8 +10,8 @@ AllCops:
 
 RSpec/RepeatedExample:
   Exclude:
-    - 'spec/spec_examples/duplicates/*'
+    - 'spec/onlyoffice_rspec_parser/spec_examples/duplicates/*'
 
 RSpec/RepeatedDescription:
   Exclude:
-    - 'spec/spec_examples/duplicates/one_dublicates_spec.rb'
+    - 'spec/onlyoffice_rspec_parser/spec_examples/duplicates/one_dublicates_spec.rb'
