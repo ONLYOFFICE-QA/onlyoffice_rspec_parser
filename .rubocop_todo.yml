@@ -17,16 +17,6 @@ RSpec/DescribeClass:
     - 'spec/spec_examples/rspec_parsed/expect_types_spec.rb'
     - 'spec/spec_examples/rspec_parsed/single_it_spec.rb'
 
-# Offense count: 6
-# Cop supports --auto-correct.
-# Configuration parameters: CustomTransform, IgnoredWords.
-RSpec/ExampleWording:
-  Exclude:
-    - 'spec/spec_examples/duplicates/no_dublicates_spec.rb'
-    - 'spec/spec_examples/duplicates/one_dublicates_spec.rb'
-    - 'spec/spec_examples/rspec_parsed/double_it_spec.rb'
-    - 'spec/spec_examples/rspec_parsed/single_it_spec.rb'
-
 # Offense count: 1
 # Cop supports --auto-correct.
 RSpec/ExpectActual:
