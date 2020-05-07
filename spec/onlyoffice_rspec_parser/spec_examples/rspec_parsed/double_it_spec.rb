@@ -8,6 +8,6 @@ describe 'My behaviour' do
   end
 
   it 'some other' do
-    expect('a').to eq('a')
+    expect(stuff).to eq('a')
   end
 end
