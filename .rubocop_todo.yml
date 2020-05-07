@@ -18,13 +18,6 @@ RSpec/DescribeClass:
     - 'spec/spec_examples/rspec_parsed/single_it_spec.rb'
 
 # Offense count: 1
-# Cop supports --auto-correct.
-RSpec/ExpectActual:
-  Exclude:
-    - 'spec/routing/**/*'
-    - 'spec/spec_examples/rspec_parsed/double_it_spec.rb'
-
-# Offense count: 1
 RSpec/ExpectInHook:
   Exclude:
     - 'spec/spec_examples/rspec_parsed/expect_after_it_spec.rb'
