@@ -17,14 +17,6 @@ RSpec/DescribeClass:
     - 'spec/spec_examples/rspec_parsed/expect_types_spec.rb'
     - 'spec/spec_examples/rspec_parsed/single_it_spec.rb'
 
-# Offense count: 4
-# Cop supports --auto-correct.
-# Configuration parameters: SkipBlocks, EnforcedStyle.
-# SupportedStyles: described_class, explicit
-RSpec/DescribedClass:
-  Exclude:
-    - 'spec/spec_parsed_spec.rb'
-
 # Offense count: 6
 # Cop supports --auto-correct.
 # Configuration parameters: CustomTransform, IgnoredWords.
