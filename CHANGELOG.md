@@ -16,3 +16,4 @@
 ### Changes
 
 * Drop support of ruby older than 2.4
+* Cleanup `gemspec` file
