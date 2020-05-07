@@ -6,11 +6,12 @@
 
 * Actualize `.gitignore`
 * Actualize travis CI config
+* Support of `markdownlint`
 
 ### Fixes
 
 * Correctly add `parser` dependency
-* Correctly show coverage on local pc 
+* Correctly show coverage on local pc
 
 ### Changes
 
