@@ -11,3 +11,7 @@ AllCops:
 RSpec/RepeatedExample:
   Exclude:
     - 'spec/spec_examples/duplicates/*'
+
+RSpec/RepeatedDescription:
+  Exclude:
+    - 'spec/spec_examples/duplicates/one_dublicates_spec.rb'
