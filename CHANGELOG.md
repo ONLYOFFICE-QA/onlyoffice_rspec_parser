@@ -2,6 +2,8 @@
 
 ## master (unreleased)
 
+## v0.2.0 (2020-05-07)
+
 ### New Features
 
 * Actualize `.gitignore`
