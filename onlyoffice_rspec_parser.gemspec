@@ -7,6 +7,7 @@ Gem::Specification.new do |s|
   s.name = OnlyofficeRspecParser::NAME
   s.version = OnlyofficeRspecParser::VERSION
   s.platform = Gem::Platform::RUBY
+  s.required_ruby_version = '>= 2.5'
   s.authors = ['ONLYOFFICE', 'Pavel Lobashov']
   s.summary = 'Parse rspec'
   s.description = 'Gem for static parsing of _rspec.rb files'
@@ -24,6 +25,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency('onlyoffice_logger_helper', '~> 1')
   s.add_runtime_dependency('parser', '~> 2')
   s.add_development_dependency('rake', '~> 13.0')
-  s.required_ruby_version = '>= 2.4'
   s.license = 'AGPL-3.0'
 end
