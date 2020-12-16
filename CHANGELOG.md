@@ -6,6 +6,7 @@
 
 * Add `rubocop` check in CI
 * Add `yard` check that 100% code documented
+* Add `dependabot` config
 
 ### Changes
 
