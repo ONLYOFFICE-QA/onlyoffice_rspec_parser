@@ -2,6 +2,11 @@
 
 ## master (unreleased)
 
+### Changes
+
+* Use GitHub Actions instead of TravisCI
+* Require ruby >= 2.5, since 2.4 EOLed
+
 ## v0.2.0 (2020-05-07)
 
 ### New Features
