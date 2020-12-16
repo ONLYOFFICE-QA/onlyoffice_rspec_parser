@@ -9,6 +9,12 @@ AllCops:
   NewCops: enable
   TargetRubyVersion: 2.5
 
+Lint/EmptyBlock:
+  Exclude:
+    - 'spec/onlyoffice_rspec_parser/spec_examples/duplicates/no_dublicates_spec.rb'
+    - 'spec/onlyoffice_rspec_parser/spec_examples/duplicates/one_dublicates_spec.rb'
+    - 'spec/onlyoffice_rspec_parser/spec_examples/rspec_parsed/single_it_spec.rb'
+
 RSpec/DescribeClass:
   Exclude:
     - 'spec/onlyoffice_rspec_parser/spec_examples/**/*'

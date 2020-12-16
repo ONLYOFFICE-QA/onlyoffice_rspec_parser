@@ -5,11 +5,3 @@
 # one by one as the offenses are removed from the code base.
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
-
-# Offense count: 5
-# Configuration parameters: AllowComments, AllowEmptyLambdas.
-Lint/EmptyBlock:
-  Exclude:
-    - 'spec/onlyoffice_rspec_parser/spec_examples/duplicates/no_dublicates_spec.rb'
-    - 'spec/onlyoffice_rspec_parser/spec_examples/duplicates/one_dublicates_spec.rb'
-    - 'spec/onlyoffice_rspec_parser/spec_examples/rspec_parsed/single_it_spec.rb'
