@@ -5,6 +5,7 @@
 ### New Features
 
 * Add `rubocop` check in CI
+* Add `yard` check that 100% code documented
 
 ### Changes
 
@@ -12,6 +13,7 @@
 * Require ruby >= 2.5, since 2.4 EOLed
 * Freeze dev dependencies in `Gemfile.lock`
 * Fixes from `rubocop` update to 1.6.1
+* Add missing documentation
 
 ## v0.2.0 (2020-05-07)
 
