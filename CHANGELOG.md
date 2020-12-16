@@ -2,11 +2,16 @@
 
 ## master (unreleased)
 
+### New Features
+
+* Add `rubocop` check in CI
+
 ### Changes
 
 * Use GitHub Actions instead of TravisCI
 * Require ruby >= 2.5, since 2.4 EOLed
 * Freeze dev dependencies in `Gemfile.lock`
+* Fixes from `rubocop` update to 1.6.1 
 
 ## v0.2.0 (2020-05-07)
 
