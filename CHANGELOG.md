@@ -5,6 +5,7 @@
 ### New Features
 
 * Add `rubocop` check in CI
+* Add `yard` check that 100% code documented
 
 ### Changes
 
