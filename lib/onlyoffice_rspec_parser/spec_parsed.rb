@@ -18,6 +18,9 @@ module OnlyofficeRspecParser
       @it_nodes ||= search_node_for_it(@parsed_data)
     end
 
+    # Search node for it
+    # @param [Parser::AST:Node] node for find
+    # @return [Array<Object>] nodes
     def search_node_for_it(node)
       nodes = []
       node.children.each do |child|

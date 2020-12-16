@@ -4,6 +4,9 @@ require 'onlyoffice_logger_helper'
 module OnlyofficeRspecParser
   # Static parsing of _rspec.rb files
   class SpecParser
+    # Get list of `it` in path
+    # @param [String] path_to_spec path
+    # @return [Array<String>] list
     def self.get_it_mass_by_path(path_to_spec)
       raise "File not exists: #{path_to_spec}!" unless File.exist?(path_to_spec)
 
@@ -19,12 +22,18 @@ module OnlyofficeRspecParser
       file_tests
     end
 
+    # Return uniq list of its
+    # @param [String] path_to_spec path
     def self.uniq_duplicates(path_to_spec)
+      # @return [Array<String>] list of uniqs
       case_names = get_it_mass_by_path(path_to_spec)
       duplicates = case_names.find_all { |e| case_names.count(e) > 1 }
       duplicates.uniq
     end
 
+    # Check if spec contains doubles
+    # @param [String] path_to_spec path
+    # @return [Array<String>] list of duplicates
     def self.check_for_doubles(path_to_spec)
       duplicates = uniq_duplicates(path_to_spec)
       if duplicates.empty?
@@ -38,6 +47,9 @@ module OnlyofficeRspecParser
       duplicates
     end
 
+    # Check if path with a lot of specs contains doubles
+    # @param [String] folder path
+    # @return [Array<String>] list of duplicates
     def self.check_folder_for_spec_doubles(folder)
       files = Dir.glob("#{folder}/**/*_spec.*")
       files.each do |cur_file|

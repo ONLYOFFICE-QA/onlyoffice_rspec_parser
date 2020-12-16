@@ -8,6 +8,7 @@ module OnlyofficeRspecParser
       @file = file
     end
 
+    # @return [String] it node to string
     def to_s
       "#{@file}:#{@node.loc.expression.to_s.split(':')[1]}"
     end
