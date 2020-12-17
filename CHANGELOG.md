@@ -2,6 +2,8 @@
 
 ## master (unreleased)
 
+## v0.3.0 (2020-12-17)
+
 ### New Features
 
 * Add `rubocop` check in CI
