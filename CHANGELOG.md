@@ -7,6 +7,7 @@
 * Add `rubocop` check in CI
 * Add `yard` check that 100% code documented
 * Add `dependabot` config
+* Add `simplecov` check in CI that test coverage is 100%
 
 ### Changes
 
@@ -16,6 +17,7 @@
 * Fixes from `rubocop` update to 1.6.1
 * Add missing documentation
 * Move repo to `ONLYOFFICE-QA` org
+* Remove `codecov` support
 
 ## v0.2.0 (2020-05-07)
 
