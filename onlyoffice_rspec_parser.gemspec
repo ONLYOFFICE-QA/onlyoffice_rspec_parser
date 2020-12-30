@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.files = Dir['lib/**/*']
   s.add_runtime_dependency('onlyoffice_file_helper', '~> 0.1')
   s.add_runtime_dependency('onlyoffice_logger_helper', '~> 1')
-  s.add_runtime_dependency('parser', '~> 2')
+  s.add_runtime_dependency('parser', '>= 2', '< 4')
   s.add_development_dependency('overcommit', '~> 0')
   s.add_development_dependency('rake', '~> 13')
   s.add_development_dependency('rspec', '~> 3')
