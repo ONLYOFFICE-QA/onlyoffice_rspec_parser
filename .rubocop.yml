@@ -34,3 +34,7 @@ RSpec/RepeatedDescription:
 RSpec/RepeatedExample:
   Exclude:
     - 'spec/onlyoffice_rspec_parser/spec_examples/duplicates/*'
+
+RSpec/IdenticalEqualityAssertion:
+  Exclude: 
+    - 'spec/onlyoffice_rspec_parser/spec_examples/rspec_parsed/expect_after_it_spec.rb'
