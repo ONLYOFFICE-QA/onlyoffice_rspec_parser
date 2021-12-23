@@ -2,9 +2,14 @@
 
 ## master (unreleased)
 
+### New Features
+
+* Check 100% `branch` coverage in CI
+
 ### Changes
 
 * Require `mfa` for releasing gem
+* Add new test to increase `branch` coverage
 
 ## v0.4.0 (2021-01-28)
 
