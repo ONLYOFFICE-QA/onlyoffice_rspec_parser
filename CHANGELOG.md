@@ -5,11 +5,13 @@
 ### New Features
 
 * Check 100% `branch` coverage in CI
+* Add `ruby-3.1` in CI
 
 ### Changes
 
 * Require `mfa` for releasing gem
 * Add new test to increase `branch` coverage
+* Remove `ruby-2.5` from CI since it's EOLed
 
 ## v0.4.0 (2021-01-28)
 
