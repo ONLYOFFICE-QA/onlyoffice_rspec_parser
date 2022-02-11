@@ -17,6 +17,7 @@
 * Require `mfa` for releasing gem
 * Add new test to increase `branch` coverage
 * Remove `ruby-2.5` from CI since it's EOLed
+* Check `dependabot` at 8:00 Moscow time daily
 
 ## v0.4.0 (2021-01-28)
 
