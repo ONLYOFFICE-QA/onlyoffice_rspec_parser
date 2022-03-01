@@ -4,7 +4,7 @@ require 'spec_helper'
 
 RSpec.describe OnlyofficeRspecParser::SpecParser do
   it 'has a version number' do
-    expect(OnlyofficeRspecParser::VERSION).not_to be nil
+    expect(OnlyofficeRspecParser::VERSION).not_to be_nil
   end
 
   it 'no_dublicates_spec' do
