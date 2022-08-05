@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.name = OnlyofficeRspecParser::NAME
   s.version = OnlyofficeRspecParser::VERSION
   s.platform = Gem::Platform::RUBY
-  s.required_ruby_version = '>= 2.5'
+  s.required_ruby_version = '>= 2.7'
   s.authors = ['ONLYOFFICE', 'Pavel Lobashov']
   s.summary = 'Parse rspec'
   s.description = 'Gem for static parsing of _rspec.rb files'

@@ -19,6 +19,7 @@
 * Remove `ruby-2.5` from CI since it's EOLed
 * Check `dependabot` at 8:00 Moscow time daily
 * Changes from `rubocop-rspec` update to 2.9.0
+* Drop `ruby-2.6` support, since it's EOLed
 
 ## v0.4.0 (2021-01-28)
 
