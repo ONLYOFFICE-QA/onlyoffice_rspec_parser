@@ -10,8 +10,8 @@ task default: :spec
 desc 'Release gem '
 task :release_github_rubygems do
   Rake::Task['release'].invoke
-  sh('gem push --key github '\
-     '--host https://rubygems.pkg.github.com/ONLYOFFICE-QA '\
-     "pkg/#{OnlyofficeRspecParser::NAME}-"\
+  sh('gem push --key github ' \
+     '--host https://rubygems.pkg.github.com/ONLYOFFICE-QA ' \
+     "pkg/#{OnlyofficeRspecParser::NAME}-" \
      "#{OnlyofficeRspecParser::VERSION}.gem")
 end
