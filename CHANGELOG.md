@@ -2,6 +2,8 @@
 
 ## master (unreleased)
 
+## v0.5.0 (2022-08-10)
+
 ### New Features
 
 * Check 100% `branch` coverage in CI
