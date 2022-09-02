@@ -2,6 +2,8 @@
 
 ## master (unreleased)
 
+## v0.6.0 (2022-09-02)
+
 ### Changes
 
 * `SpecParser.check_folder_for_spec_doubles` will return boolean value
