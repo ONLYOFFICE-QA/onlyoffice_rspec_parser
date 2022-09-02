@@ -19,16 +19,16 @@ RSpec.describe OnlyofficeRspecParser::SpecParser do
 
   it 'check_folder_for_spec_doubles works for folder' do
     path = "#{examples_path}/duplicates/"
-    expect(described_class.check_folder_for_spec_doubles(path).length).to eq(2)
+    expect(described_class.check_folder_for_spec_doubles(path)).to be_truthy
   end
 
   it 'check_folder_for_spec_doubles works for current folder' do
-    expect(described_class.check_folder_for_spec_doubles('.').length).to be > 2
+    expect(described_class.check_folder_for_spec_doubles('.')).to be_truthy
   end
 
   it 'ignore_non_rspec_files' do
     path = "#{examples_path}/spec_examples/duplicates/non_spec"
-    expect(described_class.check_folder_for_spec_doubles(path).length)
-      .to be_zero
+    expect(described_class.check_folder_for_spec_doubles(path))
+      .to be_falsey
   end
 end
