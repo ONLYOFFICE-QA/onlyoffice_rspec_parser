@@ -2,6 +2,10 @@
 
 ## master (unreleased)
 
+### Fixes
+
+* Ignore `rake` autocomplete file
+
 ## v0.5.0 (2022-08-10)
 
 ### New Features
