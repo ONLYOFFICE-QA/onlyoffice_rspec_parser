@@ -49,12 +49,14 @@ module OnlyofficeRspecParser
 
     # Check if path with a lot of specs contains doubles
     # @param [String] folder path
-    # @return [Array<String>] list of duplicates
+    # @return [Boolean] is there some files with doubles
     def self.check_folder_for_spec_doubles(folder)
+      doubles_found = false
       files = Dir.glob("#{folder}/**/*_spec.*")
       files.each do |cur_file|
-        check_for_doubles(cur_file)
+        doubles_found = true if check_for_doubles(cur_file).length.positive?
       end
+      doubles_found
     end
   end
 end

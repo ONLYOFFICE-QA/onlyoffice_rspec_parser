@@ -2,6 +2,11 @@
 
 ## master (unreleased)
 
+### Changes
+
+* `SpecParser.check_folder_for_spec_doubles` will return boolean value
+  if any double found
+
 ### Fixes
 
 * Ignore `rake` autocomplete file
