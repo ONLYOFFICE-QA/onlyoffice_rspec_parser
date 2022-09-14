@@ -27,6 +27,10 @@ RSpec/HooksBeforeExamples:
   Exclude:
     - 'spec/onlyoffice_rspec_parser/spec_examples/rspec_parsed/expect_after_it_spec.rb'
 
+RSpec/NoExpectationExample:
+  Exclude:
+    - 'spec/onlyoffice_rspec_parser/spec_examples/**/*'
+
 RSpec/RepeatedDescription:
   Exclude:
     - 'spec/onlyoffice_rspec_parser/spec_examples/duplicates/one_dublicates_spec.rb'
