@@ -2,6 +2,14 @@
 
 ## master (unreleased)
 
+### New Features
+
+* Add `ruby-3.2` to CI
+
+### Changes
+
+* Drop `ruby-2.7` support, since it's EOLed
+
 ## v0.6.0 (2022-09-02)
 
 ### Changes
