@@ -12,6 +12,10 @@
 
 * Drop `ruby-2.7` support, since it's EOLed
 
+### Fixes
+
+* Fix `gem build` warning about license name
+
 ## v0.6.0 (2022-09-02)
 
 ### Changes
