@@ -15,6 +15,7 @@
 ### Fixes
 
 * Fix `gem build` warning about license name
+* Fix `gem build` warning about homepage url
 
 ## v0.6.0 (2022-09-02)
 
