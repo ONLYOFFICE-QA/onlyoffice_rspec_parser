@@ -2,6 +2,10 @@
 
 ## master (unreleased)
 
+### Changes
+
+* Fix `rubocop-1.65.0` cop `Gemspec/AddRuntimeDependency`
+
 ## v1.0.0 (2024-02-02)
 
 ### New Features
