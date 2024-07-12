@@ -6,6 +6,10 @@
 
 * Fix `rubocop-1.65.0` cop `Gemspec/AddRuntimeDependency`
 
+### Fixes
+
+* Fix missing `rubocop-rake` in `.rubocop.yml`
+
 ## v1.0.0 (2024-02-02)
 
 ### New Features
