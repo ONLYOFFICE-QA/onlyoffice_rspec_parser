@@ -14,6 +14,7 @@
 ### Fixes
 
 * Fix missing `rubocop-rake` in `.rubocop.yml`
+* Run `rubocop` in CI through `bundle exec`
 
 ## v1.0.0 (2024-02-02)
 
